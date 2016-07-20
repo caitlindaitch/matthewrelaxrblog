@@ -5,6 +5,18 @@ Author: Matthew Lehman
 Developer @GA in Washington DC
 */
 
+/*
+
+Good job! Looks great in the browser, nice job with the layout. A few notes:
+
+- You have both a reset and a normalize stylesheet saved, but you're only using reset. Make sure you delete files you aren't using to avoid your project getting cluttered
+- Since you're starting to get to the point where you have lots of files, try breaking them up into folders to keep it organized. I would recommend having an images folder and a CSS folder
+- All of your styles should have consistent indentation and spacing; I did some cleaning up for you so you can see where you can improve
+- Typically we recommend only using classes for CSS; the point is that you want to be able to reuse styling for different elements, and you can only have one ID of each type per page. You'll be using IDs more when we get into JavaScript
+- Try to reuse classes when possible; you are using a lot of the same styling for your :hover states; why not create one and use it across all of your links?
+- You use a lot of h1 elements on the page, but you should really only have one h1 on every page. Whatever is the most important title element on the page should be an h1, and then you can use as many h2s, h3s, etc. as you want
+
+*/
 
 /******************************************
 /* SETUP
@@ -12,21 +24,18 @@ Developer @GA in Washington DC
 
 /* Box Model Hack */
 * {
-
-     box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
-
-
 
 .clear {
   clear: both;
@@ -47,18 +56,16 @@ Developer @GA in Washington DC
 /*******************************************/
 
 body {
-     color: #033048;
-     font-size: 24px;
-     font-weight: 300;
-     line-height: 1.5;
-     font-family: 'Open Sans', sans-serif;
-
+  color: #033048;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: #033048;
-    
+  text-decoration: none;
+  color: #033048;
 }
 
 /******************************************
@@ -106,10 +113,9 @@ nav {
 }
 
 .nav li {
-    display: inline;
-    font-weight: 500;
-    padding-right: 40px;
-
+  display: inline;
+  font-weight: 500;
+  padding-right: 40px;
 }
 
 .nav li a {
@@ -119,9 +125,6 @@ nav {
 .nav li a:hover {
   color: #fff;
 }
-
-
-
 
 /************ Part 2 *************/
 
@@ -136,9 +139,6 @@ nav {
   margin-bottom: 50px;
 }
 
-
-
-
 h2 {
   font-weight: 600;
   font-size: 40px;
@@ -149,9 +149,7 @@ h2 {
 .pic {
   margin-bottom: 30px;
   margin-top: 15px;
-  
 }
-
 
 article p: {
   font-size:85px;
@@ -178,13 +176,11 @@ article p: {
 }
 
 .letter {
-    float: left;
-    font-size: 50px;
-    font-weight: 600;
-    margin-right: 5px;
-
-  }
-
+  float: left;
+  font-size: 50px;
+  font-weight: 600;
+  margin-right: 5px;
+}
 
 /************** Part 3: on the side ******************/
 
@@ -200,7 +196,7 @@ article p: {
 h3 {
   font-weight: 800;
   font-size: 32px;
-  margin-top: 0px;
+  margin-top: 0px; /* Don't use px; if you're declaring something as 0 you can leave out the px and just have margin-top: 0 */
 }
 
 .aboutrelax {
@@ -212,25 +208,17 @@ h3 {
 
 .learnstuff a {
   font-weight: 800;
-
 }
 
 .ontheside a {
   font-weight: 300;
 }
 
-
 .ontheside a:hover {
-    color:#f9e42e;
+  color:#f9e42e;
 }
 
-
-
-
-
-
 /***** Part 4 *****************/
-
 
 .signup {
   background: #f9e42e;
@@ -238,7 +226,6 @@ h3 {
 }
 
 .button1 {
-  
   padding: 15px 70px;
   width: 310px;
   margin: 0 auto;
@@ -254,8 +241,6 @@ h3 {
 .button1 p:hover {
   color: #0000FF;
 }
-
-
 
 /******* part 5 footer *******/
 
@@ -280,7 +265,6 @@ footer h1{
 .relaxarea {
   color: yellow;
   margin-top: -35px;
-
 }
 
 footer img {
@@ -289,16 +273,9 @@ footer img {
   margin-top: -20px;
 }
 
-
 footer p {
   font-size: 9px;
   color: #fff;
   text-align: center;
   margin-top: -30px;
 }
-
-
-
-
-
-
